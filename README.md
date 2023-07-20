@@ -1,9 +1,9 @@
-# AI-PACMAN-AGEN
+# AI-PACMAN-AGEN Specification
 ## Part 1
-In this part of the project, you will implement different search algorithms to help Pacman find paths through its maze world. The search algorithms you'll implement include depth-first search (DFS), breadth-first search (BFS), uniform-cost search (UCS), and A* search.
+Apply various search algorithms to aid Pacman in navigating its maze environment. The implemented search algorithms encompass depth-first search (DFS), breadth-first search (BFS), uniform-cost search (UCS), and A* search. By incorporating these algorithms, Pacman will gain the ability to efficiently explore the maze, identifying optimal paths to its destinations.
 
 ### Question 1: Finding a Fixed Food Dot using Depth First Search
-Implement the depth-first search (DFS) algorithm in the depthFirstSearch function in search.py.
+Implement the depth-first search (DFS) algorithm in the depthFirstSearch function in **search.py.**
 Use the graph search version of DFS, which avoids expanding any already visited states.
 
 Test the implementation by running the command:
@@ -11,7 +11,7 @@ Test the implementation by running the command:
 python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
 ```
 ### Question 2: Breadth First Search
-Implement the breadth-first search (BFS) algorithm in the breadthFirstSearch function in search.py.
+Implement the breadth-first search (BFS) algorithm in the breadthFirstSearch function in **search.py.**
 Use the graph search version of BFS, which avoids expanding any already visited states.
 
 Test the implementation by running the command:
@@ -20,7 +20,7 @@ python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
 ```
 ### Question 3: Varying the Cost Function
 
-Implement the uniform-cost graph search algorithm in the uniformCostSearch function in search.py.
+Implement the uniform-cost graph search algorithm in the uniformCostSearch function in **search.py**.
 
 While BFS will find a fewest-actions path to the goal, we might want to find paths that are "best" in other senses. Consider mediumDottedMaze and mediumScaryMaze.
 
@@ -33,14 +33,14 @@ python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
 python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
 ```
 ### Question 4: A* Search
-Implement A* graph search in the aStarSearch function in search.py. A* takes a heuristic function as an argument.
+Implement A* graph search in the aStarSearch function in **search.py**. A* takes a heuristic function as an argument.
 
 Test the implementation using the Manhattan distance heuristic by running the command:
 ```
 python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
 ```
 ### Question 5: Finding All the Corners
-Implement the CornersProblem search problem in searchAgents.py.
+Implement the CornersProblem search problem in **searchAgents.py**.
 Choose a state representation that encodes all the information necessary to detect whether all four corners have been reached.
 
 Test the implementation using BFS by running the commands:
@@ -57,7 +57,7 @@ Test the implementation using A* search by running the command:
 python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
 ```
 ### Question 7: Eating All The Dots
-Implement the FoodSearchProblem in searchAgents.py. This problem definition formalizes the food-clearing problem.
+Implement the FoodSearchProblem in **searchAgents.py**. This problem definition formalizes the food-clearing problem.
 
 Test the implementation using BFS and A* search by running the commands:
 ```
@@ -65,7 +65,8 @@ python pacman.py -l testSearch -p AStarFoodSearchAgent
 python pacman.py -l trickySearch -p AStarFoodSearchAge
 ```
 ## Part 2: Multi-Agent Search
-In this project will design agents for the classic version of Pacman, including ghosts. Along the way, you will implement both minimax and expectimax search and implement search algorithms and apply them to solve multi-agent scenarios. The objective is to coordinate multiple Pacman agents and ghosts effectively.
+The objective of this project is to design intelligent agents for the classic version of Pacman, encompassing both Pacman and the ghosts. The focus is on implementing key search algorithms, such as minimax and expectimax, and applying them to solve multi-agent scenarios. The goal is to coordinate multiple Pacman agents and ghosts effectively, enhancing the gameplay experience.
+
 ### Question 1: Reflex Agent
 Improve the **ReflexAgent** in **multiAgents.py** to play respectably. A capable reflex agent will have to consider both food locations and ghost locations to perform well. 
 
